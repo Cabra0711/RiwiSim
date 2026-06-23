@@ -1,0 +1,25 @@
+## --- Configuración de JetBrains Rider / IntelliJ ---
+.idea/
+*.sln.iml
+*.suo
+*.user
+*.userosscache
+*.sln.docfeedback.txt
+
+## --- Carpetas de Compilación de C# (.NET) ---
+bin/
+obj/
+
+## --- Archivos de Usuario y Caché de Visual Studio / Rider ---
+*.userprefs
+*.pidb
+*.suo
+*.user
+*.userosscache
+*.sln.docfeedback.txt
+
+## --- Carpetas de herramientas y paquetes ---
+.fake/
+.paket/
+.paket-files/
+packages/

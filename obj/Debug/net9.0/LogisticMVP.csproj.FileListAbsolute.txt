@@ -218,3 +218,10 @@ C:\Users\user\Documents\LogisticMVP\bin\Debug\net9.0\Microsoft.IdentityModel.Pro
 C:\Users\user\Documents\LogisticMVP\bin\Debug\net9.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
 C:\Users\user\Documents\LogisticMVP\bin\Debug\net9.0\Microsoft.IdentityModel.Tokens.dll
 C:\Users\user\Documents\LogisticMVP\bin\Debug\net9.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\user\Documents\LogisticMVP\bin\Debug\net9.0\BCrypt-Net-Next.dll
+C:\Users\user\Documents\LogisticMVP\bin\Debug\net9.0\Microsoft.AspNetCore.OpenApi.dll
+C:\Users\user\Documents\LogisticMVP\bin\Debug\net9.0\Microsoft.OpenApi.dll
+C:\Users\user\Documents\LogisticMVP\bin\Debug\net9.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\user\Documents\LogisticMVP\bin\Debug\net9.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\user\Documents\LogisticMVP\bin\Debug\net9.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\user\Documents\LogisticMVP\obj\Debug\net9.0\LogisticMVP.sourcelink.json

@@ -24,7 +24,7 @@ public class AuthService : IAuthService
         _configuration = configuration;
     }
 
-    public async Task<ServiceResponse<User>> CreateUser(User user)
+    public async Task<ServiceResponse<User>> RegisterUser(User user)
     {
         var response = new ServiceResponse<User>();
         var userValidator = _userValidator.Validate(user);
@@ -43,7 +43,39 @@ public class AuthService : IAuthService
         }
         else
         {
-            user.Role = UserRole.Admin;
+            user.Role = UserRole.Client;
+            user.PasswordHash = BCrypt.Net.BCrypt.HashPassword(user.PasswordHash);
+            await _context.Users.AddAsync(user);
+            await _context.SaveChangesAsync();
+            
+            response.Message = "User created successfully";
+            response.Success = true;
+            response.Data = user;
+            
+            return response;
+        }
+    }
+    
+    public async Task<ServiceResponse<User>> RegisterDriver(User user)
+    {
+        var response = new ServiceResponse<User>();
+        var userValidator = _userValidator.Validate(user);
+        if (!userValidator.IsValid)
+        {
+            response.Success = false;
+            return response;
+        }
+        
+        var userExists = await _context.Users.FirstOrDefaultAsync(u => u.Email == user.Email);
+        if (userExists != null)
+        {
+            response.Success = false;
+            response.Message = "User already exists in the system";
+            return response;
+        }
+        else
+        {
+            user.Role = UserRole.Driver;
             user.PasswordHash = BCrypt.Net.BCrypt.HashPassword(user.PasswordHash);
             await _context.Users.AddAsync(user);
             await _context.SaveChangesAsync();
