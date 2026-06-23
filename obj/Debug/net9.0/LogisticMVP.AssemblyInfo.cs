@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("LogisticMVP")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ea5b815981679b3afa0f4027e0c10920ebe03c87")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+35ab98970c56c71bddd3bed67f77d094d386749b")]
 [assembly: System.Reflection.AssemblyProductAttribute("LogisticMVP")]
 [assembly: System.Reflection.AssemblyTitleAttribute("LogisticMVP")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
